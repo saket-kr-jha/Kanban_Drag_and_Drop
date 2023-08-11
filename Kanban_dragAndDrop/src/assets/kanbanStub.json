@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "TCSC-01",
+    "description": "Group Control DSC",
+    "labels": ["Feature"],
+    "dueDate": "2023-08-25",
+    "status": "todo"
+  },
+  {
+    "id": 2,
+    "title": "TCSC-02",
+    "description": "Null Values in Pricing Table",
+    "labels": ["Bug"],
+    "dueDate": "2023-08-25",
+    "status": "todo"
+  },
+  {
+    "id": 3,
+    "title": "TCSC-03",
+    "description": "Values missing in Spec Memo",
+    "labels": ["Bug"],
+    "dueDate": "2023-08-25",
+    "status": "todo"
+  },
+  {
+    "id": 4,
+    "title": "TCSC-04",
+    "description": "API logic for Group Control",
+    "labels": ["Task"],
+    "dueDate": "2023-08-18",
+    "status": "inProgress"
+  },
+  {
+    "id": 5,
+    "title": "TCSC-05",
+    "description": "UI  logic for Group Control Design",
+    "labels": ["Task"],
+    "dueDate": "2023-08-18",
+    "status": "inProgress"
+  },
+  {
+    "id": 6,
+    "title": "TCSC-06",
+    "description": "ETO Enquiry",
+    "labels": ["Feature"],
+    "dueDate": "2023-08-11",
+    "status": "done"
+  },
+  {
+    "id": 7,
+    "title": "TCSC-07",
+    "description": "Error occurs on click of GAD",
+    "labels": ["Bug"],
+    "dueDate": "2023-08-15",
+    "status": "done"
+  },
+  {
+    "id": 8,
+    "title": "TCSC-08",
+    "description": "Creating BI logic for ETO Enquiry",
+    "labels": ["Task"],
+    "dueDate": "2023-08-11",
+    "status": "done"
+  }
+]

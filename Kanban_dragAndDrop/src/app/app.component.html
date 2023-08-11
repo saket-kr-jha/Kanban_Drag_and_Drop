@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row pb-3 pt-3">
+    <div class="col-12 text-center">
+      <h1>Jira Board (Drag n Drop)</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 board">
+      <div class="column" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'todo')">
+        <div class="column-header">
+          <div class="column-title" >To Do</div>
+          <div class="add-card">+ Add Card</div>
+        </div>
+        <div class="card" draggable="true" *ngFor="let item of filterTickets('todo')" (dragstart)="onDragStart(item)">
+          <div class="card-title">{{item.title}}</div>
+          <div class="card-description">{{item.description}}</div>
+          <div class="card-footer">
+            <div class="card-label"
+              [ngStyle]="{'background-color': (item.labels.includes('Feature')) ? 'darkslateblue' : ((item.labels.includes('Bug')) ? 'Darkred' : 'forestgreen') }">
+              {{item.labels}}</div>
+            <div class="due-date">Due: {{item.dueDate}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="column" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'inProgress')">
+        <div class="column-header">
+          <div class="column-title" >In Progress</div>
+          <div class="add-card">+ Add Card</div>
+        </div>
+        <div class="card" draggable="true" *ngFor="let item of filterTickets('inProgress')" (dragstart)="onDragStart(item)">
+          <div class="card-title">{{item.title}}</div>
+          <div class="card-description">{{item.description}}</div>
+          <div class="card-footer">
+            <div class="card-label"
+              [ngStyle]="{'background-color': (item.labels.includes('Feature')) ? 'darkslateblue' : ((item.labels.includes('Bug')) ? 'Darkred' : 'forestgreen') }">
+              {{item.labels}}</div>
+            <div class="due-date">Due: {{item.dueDate}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="column" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'done')">
+        <div class="column-header">
+          <div class="column-title">Done</div>
+          <div class="add-card">+ Add Card</div>
+        </div>
+        <div class="card" draggable="true" *ngFor="let item of filterTickets('done')" (dragstart)="onDragStart(item)">
+          <div class="card-title">{{item.title}}</div>
+          <div class="card-description">{{item.description}}</div>
+          <div class="card-footer">
+            <div class="card-label"
+              [ngStyle]="{'background-color': (item.labels.includes('Feature')) ? 'darkslateblue' : ((item.labels.includes('Bug')) ? 'Darkred' : 'forestgreen') }">
+              {{item.labels}}</div>
+            <div class="due-date">Due: {{item.dueDate}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

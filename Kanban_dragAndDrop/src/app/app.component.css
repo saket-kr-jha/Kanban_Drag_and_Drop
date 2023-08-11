@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f5f7;
+  }
+
+  .board {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    overflow-x: auto;
+  }
+
+  .column {
+    flex: 0 0 450px;
+    background-color: #ebecf0;
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+  }
+
+  .column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .column-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #172b4d;
+  }
+
+  .add-card {
+    color: #6b778c;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .add-card:hover {
+    color: #172b4d;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+    transition: background-color 0.2s;
+  }
+
+  .card:hover {
+    background-color: #f4f5f7;
+  }
+
+  .card-title {
+    font-size: 16px;
+    color: #172b4d;
+    margin-bottom: 8px;
+  }
+
+  .card-description {
+    font-size: 14px;
+    color: #6b778c;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .card-label {
+    font-size: 12px;
+    color: #fff;
+    background-color: #36b37e;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .due-date {
+    font-size: 12px;
+    color: #6b778c;
+  }
